@@ -1,0 +1,443 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    /* height: 10000px; */
+    width: 90vw;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    /* left: 100px; */
+    margin: 9px 14px;
+    padding: 9px 14px;
+}
+
+
+#navigation{
+    z-index: 1;
+    position: relative;
+    top: 0px;  
+    /* background-color: rgb(136, 134, 134); */
+    /* justify-content: center; */
+}
+
+
+.nav_bar {
+    display: flex;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    color: aliceblue;
+    font-weight: bold;
+    margin: auto;
+
+    
+}
+
+.nav_content{
+    display: flex;
+}
+
+.nav_items{display: flex;
+    /* font-family: 'Poppins', sans-serif; */
+    justify-content: space-around;
+    margin: 9px 14px;
+    padding: 9px 14px;
+    transition: color transform .7s ease-in-out;
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav_btn{
+    display: flex;
+    margin-top: 13px;
+    justify-content: space-between;
+}
+
+.btn_nav{
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 7px;
+    margin: 2px ;
+    font-weight: 200;
+}
+
+.login{
+    background-color: #850000;
+    border-radius: 23px;
+    border: solid 1px #850000;
+    color: rgb(245, 245, 245);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.login:hover{
+    background-color: white;
+    border: solid 1px #850000 ;
+    color: #850000;
+    /* font-weight: bold; */
+    
+}
+
+
+.nav_items:hover{
+    color: #850000;
+    transform: scale(1.2);
+    cursor: pointer;
+    
+
+}
+
+/* main_header */
+
+.banner_image{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("banner-art.jpg");
+    background-size: cover;
+    /* background-position: bottom; */
+    position: relative;
+    top: 0px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+ 
+.stn{
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 14px;
+    margin: 0px 25px;
+    color: #850000;
+    border: solid white 1px;
+    /* border-radius: 16px; */
+    background-color: aliceblue;
+    position: relative;
+    left: 200px;
+    /* transition: .2s; */
+    font-weight: bold;
+    
+}
+
+.stn:hover{
+    color: rgb(241, 238, 238);
+    border: 2px solid white;
+    background-color: #850000;
+    /* z-index: 1; */
+}
+
+/* .main_content */
+
+.main_content{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #850000, #2e0907);
+    display: flex;
+    /* position: relative; */
+    /* top: 10px; */
+    margin: 0px;
+    padding: 0px;
+    
+}
+.vloging_content{
+    width: 80vw;
+    margin: 40px auto;
+    padding: 50px 0px;
+    height: fit-content;
+    background-color: aliceblue;
+    display: flex;
+    
+}
+
+
+
+
+.left_vloging_box{
+    max-width: 900px;
+    height: 379px;
+    padding: 2px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+}
+
+span{
+    color: blue;
+    font-size: 28px;
+}
+
+.drone_shot{
+    align-items: center;
+}
+
+.right_vloging_box{
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    font-weight: 700;
+    font-size: 27px;
+    /* justify-content: right; */
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.text-animation{
+    position: relative;
+}
+
+.animated_text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    border-left: 2px solid black;
+    animation: animate 4s steps(12) infinite;
+    overflow: hidden;
+
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc( 100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 23px;
+    border: solid 1px blue;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 11px;
+    display: block;
+    margin: auto;
+    font-size: .4em;
+}
+.btn:hover{
+    color: blue;
+    background-color: white;
+    border: solid 1px blue;
+}
+
+
+/* hire equipments */
+.hire_equipments{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* position: relative; */
+    /* top: 0px; */
+    background-color: rgb(167, 172, 160);
+    justify-content: center;
+    align-items: center;
+}
+.camera_content{
+    width: 80vw;
+    height: 90vh;
+    background-color: azure;
+    display: flex;
+    
+}
+.left_camera_content{
+    max-width: 900px;
+    height: 379px;
+    padding: 2px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    /* justify-content: center; */
+    position: relative;
+    top: 30px;
+}
+.cam_broll{
+    width: auto;
+}
+
+.right_camera_content{
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    font-weight: 700;
+    font-size: 27px;
+    /* justify-content: right; */
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.text_for_you{
+    font-size: 40px;
+    font-weight: 10;   
+}
+
+
+
+
+/* hire_photographer */
+
+.hire_photographer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* position: relative; */
+    /* top: 0px; */
+    background-color: rgb(167, 172, 160);
+    justify-content: center;
+    align-items: center;
+}
+
+.hire_content{
+    width: 80vw;
+    height: 90vh;
+    background-color: azure;
+    display: flex;
+    
+}
+
+
+.left_hire_content{
+    width: 40vw;
+    height: 90vh;
+    background-image: url("/img/pexels-suliman-sallehi-1540977.jpg");
+    background-size: cover ;
+}
+
+.right_hire_content{
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    font-weight: 700;
+    font-size: 27px;
+    /* justify-content: right; */
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+
+
+/* hire advertisesr */
+.hire_advertiser{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* position: relative; */
+    /* top: 0px; */
+    background-color: rgb(149, 219, 51);
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
+}
+.adv_content{
+    width: 80vw;
+    height: 90vh;
+    background-color: azure;
+    display: flex;
+    
+}
+.left_adv_content{
+    max-width: 900px;
+    height: 379px;
+    padding: 2px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+.redbull_broll{
+    width: auto;
+}
+
+.right_adv_content{
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    font-weight: 700;
+    font-size: 27px;
+    /* justify-content: right; */
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.text_for_you{
+    font-size: 40px;
+    font-weight: 10;   
+}
+
+
+
+
+
+
+/* responsive media quiries */
+
+@media screen and (max-width: 1574px) {
+    .vloging_content {
+      flex-direction: column;
+    }
+    .left_vloging_box{
+        /* margin: auto; */
+        justify-content: center;
+        align-items: center;
+
+    }
+    .camera_content {
+        flex-direction: column;
+      }
+      .left_camera_content{
+          /* margin: auto; */
+          justify-content: center;
+          align-items: center;
+      }
+    .adv_content {
+        flex-direction: column;
+      }
+      .left_adv_content{
+          /* margin: auto; */
+          justify-content: center;
+          align-items: center;
+      }
+  }
+
+@media screen and (max-width: 723px) {
+    .hire_content {
+      flex-direction: column;
+    }
+    .left_hire_content{
+        /* margin: auto; */
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 90vh;
+
+    }
+    .right_hire_content p,span{
+        overflow-y: hidden;
+    }
+  }
